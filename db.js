@@ -16,7 +16,7 @@ import mysql from "mysql";
 
 
 export const db = mysql.createConnection({
-  host: "https://mmemories.onrender.com",
+  host: "localhost",
   user: "root",
   password: "12345",
   database: "blog",
