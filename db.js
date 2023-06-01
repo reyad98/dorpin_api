@@ -14,13 +14,11 @@
 
 import mysql from "mysql";
 
-const port = process.env.DB_PORT || 8800;
 
 export const db = mysql.createConnection({
-  host: "localhost",
+  host: "https://mmemories.onrender.com",
   user: "root",
   password: "12345",
   database: "blog",
-  port: process.env.NODE_ENV === "production" ? port : undefined,
 });
 
